@@ -32,20 +32,28 @@
             <!--contenedor-->
           </header>
           <main class="contenedor">
-            <h2 class="centrar-texto">Sobre Nosotros</h2>
-            <div class="contenido-nosotros">
-                <div class="imagen-nosotros">
-                  <img src="/img/nosotros.jpg" alt="imagen nosotros" />
+              <h2 class="centrar-texto">Contacto</h2>
+            <div class="contacto">
+                <div class="imagen-contacto">
+                    <img src="img/contacto.jpg" alt="imagen contacto">
                 </div>
-                <p>
-                  Aenean ullamcorper facilisis lorem et elementum. Curabitur vitae erat
-                  risus. Vivamus vitae sem tortor. Interdum et malesuada fames ac ante
-                  ipsum primis in faucibus. Ut consectetur nisl massa, ac consequat metus
-                  facilisis at. In hac habitasse platea dictumst. Phasellus vitae mattis
-                  leo. Aliquam pulvinar, ligula id ornare aliquet, magna turpis auctor mi,
-                  eget volutpat justo mauris a diam. Praesent sed neque ante. Etiam
-                  placerat vitae neque ut accumsan. 
-                </p>
+                <form action="#" class="formulario-contacto">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" placeholder="Tu nombre" id="nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="text" placeholder="Tu email" id="email">
+                    </div>
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea  id="mensaje"></textarea>
+                    </div>
+                    <div class="enviar">
+                        <input type="submit" value="enviar" class="btn btn-primario">
+                    </div>
+                </form>
             </div>
           </main>
           <footer class="site-footer">

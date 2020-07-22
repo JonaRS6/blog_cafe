@@ -260,3 +260,46 @@ img {
 .detalles-taller p span{
   font-weight: 700;
 }
+/**Contacto**/
+.contacto{
+  display: flex;
+  flex-wrap: wrap;
+}
+.formulario-contacto{
+  padding: 4rem;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+}
+@media (min-width: 1000px) {
+  .formulario-contacto{
+    flex: 0 0 80%;
+    margin-top: -10rem;
+
+  }
+}
+.campo{
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.campo label{
+  padding: 1rem;
+}
+.campo input, .campo textarea {
+  border: 1px solid lightgray;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .campo input, .campo textarea {
+    flex: 0 0 calc(80% - 1rem);
+  }
+  .campo label {
+    flex: 0 0 calc(20% - 1rem);
+    text-align: end;
+  }
+}
+.campo textarea {
+  height: 20rem;
+}
