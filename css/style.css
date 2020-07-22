@@ -85,6 +85,7 @@ img {
   background-position: center center;
   background-size: cover;
   height: 100vh;
+  min-height: 600px;
 }
 @media (min-width: 768px) {
     .site-header{
@@ -202,6 +203,7 @@ img {
     font-weight: 700;
 }
 /************INTERNAS**************/
+/**Nosotros**/
 @media (min-width: 768px) {
     .contenido-nosotros{
         display: flex;
@@ -214,4 +216,47 @@ img {
     .contenido-nosotros p{
         flex-basis: calc(50% - 1rem);
     }
+}
+/**Cursos**/
+.contenedor-cursos{
+  display: flex;
+  flex-direction: column;
+}
+.taller{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 2rem;
+}
+@media (min-width: 1000px) {
+  .taller{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .imagen-taller {
+    flex: 0 0 calc(40% - 1rem);
+  }
+  .detalles-taller{
+    flex: 0 0 calc(60% - 1rem);
+  }
+}
+@media (min-width: 1200px) {
+  .imagen-taller {
+    flex: 0 0 calc(30% - 1rem);
+  }
+  .detalles-taller{
+    flex: 0 0 calc(70% - 1rem);
+  }
+}
+.taller:last-of-type{
+  border: none;
+}
+.detalles-taller a {
+  text-decoration: none;
+  color: black;
+}
+.detalles-taller p span{
+  font-weight: 700;
 }
